@@ -1,0 +1,92 @@
+/* Reset some default styles */
+body, h1, p, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.company_banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    position: absolute;
+    width: 19%;
+    font-size: 32px;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #172447;
+}
+.company_banner img {
+    width: 50px;
+    height: 50px;
+}
+
+.company_banner h1 {
+    font-size: 32px;
+    color: #172447;
+}
+
+.header_des {
+    font-size: 13px;
+    position: absolute;
+    width: 80%; /* Adjust the width as needed */
+    text-align: center;
+    top: 75%; /* Adjust the top position as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    color: #172447;
+}
+
+.navigation_Controller {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    z-index: 1;
+}
+
+.navigation_Controller h2 {
+    font-size: 14px;
+    margin-left: 20px;
+    color: #172447;
+    cursor: pointer;
+}
+
+.navigation_Controller h2:hover {
+    text-decoration: underline;
+}
+
+/* endof header */
+
+.about_us {
+    width: 100%;
+    height: 300px;
+    background-color: #201f1f;
+}
