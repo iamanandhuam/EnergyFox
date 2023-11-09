@@ -54,13 +54,7 @@ header img {
 
 .header_des {
     font-size: 13px;
-    position: absolute;
-    width: 80%; /* Adjust the width as needed */
-    text-align: center;
-    top: 75%; /* Adjust the top position as needed */
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
+    text-align: right;
     color: #172447;
 }
 
