@@ -93,6 +93,10 @@ header img {
     align-items: center;
 }
 
+.about_us img {
+    width: 200px;
+}
+
 .left {
     width: 40%;
     height: 200px;
@@ -133,5 +137,77 @@ header img {
     background-color: #fff;
 }
 
-/* end of about section *   /
+/* end of about section */
+
+#services {
+    text-align: center; 
+    padding: 50px;
+    display: grid;
+    gap: 10px; 
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+
+.service {
+    position: relative;
+    cursor: pointer;
+}
+
+.service_images {
+    width: 291px;
+    height: 352px;
+    transition: .35s;
+    filter: grayscale();
+}
+
+.service-details {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    padding: 10px;
+    text-align: center;
+    display: none;
+}
+
+.service-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.service-subtitle {
+    font-style: italic;
+}
+
+.service:hover .service_images {
+    filter: grayscale(0%);
+}
+
+.service:hover .service-details {
+    display: block;
+}
+
+/* end of services view */
+
+.contact-details {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.contact-details h2 {
+    margin-bottom: 10px;
+}
+
+.contact-details p {
+    margin: 5px 0;
+}
+
+.contact-details a {
+    color: #fff;
+    margin-left: 5px;
+}
+
 
