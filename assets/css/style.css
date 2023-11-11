@@ -1,5 +1,10 @@
 /* Reset some default styles */
-body, h1, p, input, textarea, button {
+body,
+h1,
+p,
+input,
+textarea,
+button {
     margin: 0;
     padding: 0;
     border: none;
@@ -43,6 +48,7 @@ header img {
     z-index: 1;
     color: #172447;
 }
+
 .company_banner img {
     width: 50px;
     height: 50px;
@@ -130,20 +136,20 @@ header img {
     text-align: right;
 }
 
-#underline { 
+#underline {
     height: 2px;
     width: 150px;
     margin-bottom: 10px;
-    background-color: #fff;
+    background-color: #fb9c1f;
 }
 
 /* end of about section */
 
 #services {
-    text-align: center; 
-    padding: 50px;
+    text-align: center;
+    padding: 100px;
     display: grid;
-    gap: 10px; 
+    gap: 10px;
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
 }
@@ -154,18 +160,19 @@ header img {
 }
 
 .service_images {
-    width: 291px;
-    height: 352px;
-    transition: .35s;
+    width: 200px;
+    height: 200px;
+    transition: .3s;
     filter: grayscale();
+    border-radius: 50%;
 }
 
 .service-details {
     position: absolute;
     top: 100%;
     left: 50%;
+    width: 100%;
     transform: translateX(-50%);
-    /* background-color: rgba(255, 255, 255, 0.8); */
     padding: 10px;
     text-align: center;
     display: none;
@@ -182,6 +189,8 @@ header img {
 
 .service:hover .service_images {
     filter: grayscale(0%);
+    border-radius: 1%;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
 }
 
 .service:hover .service-details {
@@ -189,25 +198,179 @@ header img {
 }
 
 /* end of services view */
+/* @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
 
-.contact-details {
+* {
+    font-family: Open Sans;
+} */
+
+/* section {
+    width: 100%;
+    display: inline-block;
+    background: #333;
+    height: 50vh;
     text-align: center;
-    padding: 20px;
-    background-color: #333;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: underline;
+} */
+
+.footer-distributed {
+    background: #666;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3 {
+    color: #ffffff;
+    /* font: normal 36px 'Open Sans', cursive; */
+    margin: 0;
+}
+
+.footer-distributed h3 span {
+    color: #fb9c1f;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    font-weight: 400;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #222;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    font-weight: 400;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: #fb9c1f;
+    text-decoration: none;
+    ;
+}
+
+.footer-distributed .footer-links a:before {
+    content: "|";
+    font-weight: 300;
+    font-size: 20px;
+    left: 0;
     color: #fff;
+    display: inline-block;
+    padding-right: 5px;
 }
 
-.contact-details h2 {
-    margin-bottom: 10px;
+.footer-distributed .footer-links .link-1:before {
+    content: none;
 }
 
-.contact-details p {
-    margin: 5px 0;
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 20%;
 }
 
-.contact-details a {
-    color: #fff;
-    margin-left: 5px;
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
 }
 
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
 
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
