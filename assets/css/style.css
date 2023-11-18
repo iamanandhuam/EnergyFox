@@ -357,6 +357,15 @@ header img {
     margin-bottom: 5px;
 }
 
+.footer-icons a img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-icons a:hover img {
+    transform: scale(1.2);
+    /* Optional: Add a scale effect on hover */
+}
+
 .footer-distributed .footer-icons i {
     font-size: 20px;
     color: #ffffff;
