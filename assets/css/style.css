@@ -198,22 +198,6 @@ header img {
 }
 
 /* end of services view */
-/* @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
-
-* {
-    font-family: Open Sans;
-} */
-
-/* section {
-    width: 100%;
-    display: inline-block;
-    background: #333;
-    height: 50vh;
-    text-align: center;
-    font-size: 22px;
-    font-weight: 700;
-    text-decoration: underline;
-} */
 
 .footer-distributed {
     background: #666;
@@ -232,25 +216,19 @@ header img {
     vertical-align: top;
 }
 
-/* Footer left */
-
 .footer-distributed .footer-left {
     width: 40%;
 }
 
-/* The company logo */
 
 .footer-distributed h3 {
     color: #ffffff;
-    /* font: normal 36px 'Open Sans', cursive; */
     margin: 0;
 }
 
 .footer-distributed h3 span {
     color: #fb9c1f;
 }
-
-/* Footer links */
 
 .footer-distributed .footer-links {
     color: #ffffff;
@@ -355,22 +333,31 @@ header img {
 }
 
 .footer-distributed .footer-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     margin-top: 25px;
 }
 
 .footer-distributed .footer-icons a {
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-    background-color: #33383b;
-    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
 
+.footer-distributed .footer-icons img {
+    width: 30px;
+    /* Adjust the width as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-bottom: 5px;
+}
+
+.footer-distributed .footer-icons i {
     font-size: 20px;
     color: #ffffff;
-    text-align: center;
-    line-height: 35px;
-
-    margin-right: 3px;
-    margin-bottom: 5px;
 }
